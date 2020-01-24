@@ -1,0 +1,91 @@
+
+.navbar {
+    background-color: #0a3645 !important;
+    padding: unset;
+    margin-bottom: 24px;
+  
+    .nav-item {
+      flex: 0 0 95.2px;
+      height: 40px;
+  
+      .nav-link {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        opacity: 0.55;
+        font-size: 10px;
+        line-height: 1.2;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .active-link {
+        background-color: #4a636c !important;
+          font-weight: bold;
+          opacity: unset;
+          height: 40px;
+      }
+  
+    }
+  
+    .dropdown {
+      .btn-secondary {
+        background-color: unset;
+        border: none;
+      }
+  
+      .dropdown-toggle {
+        display: inline-block;
+        padding-top: 10px;
+        opacity: unset;
+        font-size: 12px;
+        text-align: left;
+        color: #fff;
+  
+      }
+  
+    }
+  
+    .dropdown-menu {
+      left: unset;
+      right: 5px
+    }
+  
+  }
+  
+  //svg
+  .group-1 {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+  }
+  
+  .topbar-center-logo .top-bar-center {
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .topbar-center-logo .top-bar-center {
+      display: none;
+    }
+  }
+  
+  .navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  }
+  
+  
+  
+  .navbar-light .navbar-toggler-icon {
+    background-image: url(/assets/img/Union-739.svg);
+    width: 24.1px;
+    height: 13.6px;
+    object-fit: contain;
+  
+  }
+  
