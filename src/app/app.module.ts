@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { Nav1Component } from './nav1/nav1.component';
 import { Nav2Component } from './nav2/nav2.component';
 import { Nav3Component } from './nav3/nav3.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { Nav3Component } from './nav3/nav3.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    DragDropModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

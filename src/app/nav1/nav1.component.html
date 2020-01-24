@@ -1,1 +1,41 @@
-<p>nav1 works!</p>
+<div class="container">
+
+    <div class="section-header">
+      <span>Section</span>
+      <span class="add-new-button"  id ="add-new-button" (click)="addNewButton()">+ add category</span>
+  
+    </div>
+  
+    <form (submit)="add()" class="needs-validation">
+      <table cdkDropList (cdkDropListDropped)="dropTest($event)">
+        <tr>
+          <th></th>
+          <th>CATEGORY</th>
+          <th>Seq.</th>
+          <th></th>
+        </tr>
+        <tr *ngFor="let item of categorie_array" cdkDrag>
+          <td><img src="assets/img/Group-15551.svg" class="Group-15551 move-img"/></td>
+          <td>{{item.name}}</td>
+          <td>
+            <div class="seq-num">{{item.seq}}</div>
+          </td>
+          <td>
+            <img src="assets/img/Group-15585.svg" (click)="delete(item)" class="Group-15585 remove-btn"/>
+          </td>
+        </tr>
+  
+        <ng-template [ngIf]="opened == true">
+          <tr>
+            <td><img src="assets/img/Group-15551.svg" class="Group-15551 move-img"/></td>
+            <td><input type="text" id="categoryField" class="form-control" placeholder="Category Name" [(ngModel)]="name" name="Name" required></td>
+            <td></td>
+            <td>
+              <button class="save-btn" type="submit">SAVE</button>
+            </td>
+          </tr>
+        </ng-template>
+      </table>
+    </form>
+  
+  </div>
