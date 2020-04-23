@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "servicelink"
+    }
+  },
+  "defaultProject": "servicelink",
+  "cli": {
+    "analytics": "8f2c9a4e-e3c2-4896-8036-b6a9d9df4107"
+  }
 }
